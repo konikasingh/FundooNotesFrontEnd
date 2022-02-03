@@ -1,0 +1,193 @@
+.name-container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;     
+    margin-bottom:5px;    
+}
+
+.email-container 
+{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;    
+    margin-bottom:5px;
+}
+
+.password-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: left;
+  width: 100%;     
+  margin-bottom:5px; 
+}
+
+h1
+{
+  text-align: left;
+  font-size: xxx-large;
+  padding: 15px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+h1
+{
+  text-align: left;
+  font-size: xx-large;
+  padding: 15px;
+}
+.k1
+{
+  color: blue;
+}
+.k2
+{
+  color: red;
+}
+.k3
+{
+  color: yellow;
+}
+.k4
+{
+  color: green;
+}
+.k5
+{
+  color: green;
+}
+.k6
+{
+  color: red;
+}
+
+.fundoonote-container
+{
+  border: 1px solid rgb(189, 183, 183);
+  box-sizing: border-box;
+  width: 56%;
+  height: 90%;
+  display: flex;
+  border-radius: 2%;
+  padding: 30px;   
+}
+
+.button
+{
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-bottom:5px;
+  column-gap: 40px; 
+}
+
+h2
+{
+  text-align: left;
+  font-size: x-large;
+  padding: 15px;
+}
+
+button
+{
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #1a73e8;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 1rem;
+  float: right;  
+}
+
+.button1
+{
+  background-color: transparent;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+button:hover 
+{
+  opacity: 0.8;
+  color :#1E90FF
+}
+
+.left_container
+{    
+  width:50%;
+  height: 100%;
+}
+
+.right_contianer
+{     
+  width:50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+
+ .Registration_container
+ {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+.name_input
+{
+  width: 48%;
+}
+
+.email_input
+{
+  width: 100%;
+}
+
+.Left-side
+{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email-k1
+{
+  font-size: small;
+  color: rgb(102, 99, 99);
+}
+
+.email-k1>p
+{
+  margin-left: 10px;
+  margin-top: -18px;
+}
+
+.Password_p1
+{
+  font-size: small;
+  color:  rgb(102, 99, 99);  
+}
+.Password_p1>p
+{
+  margin-top: 7px;
+  margin-left: 10px;
+}
