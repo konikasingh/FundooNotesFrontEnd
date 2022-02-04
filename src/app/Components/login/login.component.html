@@ -9,20 +9,24 @@
     </h1>
   
     <h2>Sign in</h2>
-    <form>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
     <div class ="input-container">
       <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="email">
+            <input matInput placeholder="email" formControlName="email">
+            <mat-error>Enter email</mat-error>
       </mat-form-field>
-  
+
+      <div routerLink='/forget-password'>
       <div class = "forgetEmail">
         <button class="button">Forgot Email?</button>
+      </div>
       </div>
   
       <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
-        <input matInput placeholder="password">
+        <input matInput placeholder="password" formControlName="password">
+        <mat-error>Enter password</mat-error>
        </mat-form-field>
     </div>
 
@@ -33,9 +37,11 @@
     <div class="text2">
       <button class="button">Learn More</button>
     </div>
-  
-    <div class="createAccount">
-      <button class="button">Create Account</button>
+     
+    <div routerLink='/registration'>
+      <div class="createAccount">
+        <button class="button">Create Account</button>
+      </div>
     </div>
   
     <div class = "text3">

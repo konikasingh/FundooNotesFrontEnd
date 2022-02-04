@@ -11,24 +11,27 @@
             <span class="k6">o</span>
           </h1>
           <h2>Create Your Fundoo Account</h2>
-          <form>
+          <form [formGroup]="registerForm" (ngSubmit)="register()">
           <div class="name-container">
             
             <mat-form-field appearance="outline" class="name_input">
               <mat-label>First Name</mat-label>
-              <input matInput placeholder="First Name" >
+              <input matInput placeholder="First Name" formControlName="firstName">
+              <mat-error>Enter first name</mat-error>
             </mat-form-field>
   
             <mat-form-field appearance="outline" class="name_input">
               <mat-label>Last Name</mat-label>
-              <input matInput placeholder="Last Name" >
+              <input matInput placeholder="Last Name" formControlName="lastName">
+              <mat-error>Enter last name</mat-error>
             </mat-form-field>
           </div>
   
           <div class="email-container">
             <mat-form-field class="email_input" appearance="outline">
               <mat-label>Email</mat-label>
-              <input matInput placeholder="Email" >
+              <input matInput placeholder="Email" formControlName="email" >
+              <mat-error>Enter email</mat-error>
             </mat-form-field>
   
           </div>
@@ -40,12 +43,14 @@
   
             <mat-form-field appearance="outline" class="name_input">
               <mat-label>Password</mat-label>
-              <input matInput placeholder="Password" >
+              <input matInput placeholder="Password" formControlName="password">
+              <mat-error>Enter password</mat-error>
             </mat-form-field>
   
             <mat-form-field appearance="outline" class="name_input">
               <mat-label>Confirm</mat-label>
-              <input matInput placeholder="Confirm" >
+              <input matInput placeholder="Confirm" formControlName="confirmPassword" >
+              <mat-error>Confirm the password</mat-error>
             </mat-form-field>
           </div>
           <div>
@@ -57,7 +62,9 @@
   
           <div class="Left-side">
             <span class="email_p2">
-              <p>Sign in instead</p>
+              <div routerLink='/login'>
+               <p>Sign in instead</p>
+              </div> 
             </span>
             <button mat-raised-button color="primary">Next</button>
           </div>
@@ -69,7 +76,6 @@
   
       </div>
   
-    </div>
-  
-    
-  </div>
+    </div> 
+      
+</div>
