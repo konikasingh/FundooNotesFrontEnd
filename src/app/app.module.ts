@@ -8,11 +8,14 @@ import { RegistrationComponent } from './Components/registration/registration.co
 import { LoginComponent } from './Components/login/login.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ForgetPasswordComponent } from './Components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './Components/reset-password/reset-password.component';
+
 
 
 @NgModule({
@@ -21,7 +24,8 @@ import { ResetPasswordComponent } from './Components/reset-password/reset-passwo
     RegistrationComponent,
     LoginComponent,
     ForgetPasswordComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+   
     
   ],
   imports: [
@@ -32,8 +36,12 @@ import { ResetPasswordComponent } from './Components/reset-password/reset-passwo
     FormsModule ,
     MatInputModule,
     MatCheckboxModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+    
+    
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
