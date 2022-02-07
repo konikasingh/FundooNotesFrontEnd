@@ -12,7 +12,7 @@
           </h1>
           <h2>Create Your Fundoo Account</h2>
           <form [formGroup]="registerForm" (ngSubmit)="register()">
-          <div class="name-container">
+          <div class="name-container" fxLayout.sm="column">
             
             <mat-form-field appearance="outline" class="name_input">
               <mat-label>First Name</mat-label>
@@ -73,7 +73,7 @@
           </div>
         </form>
       </div>
-      <div class="right_contianer">
+      <div class="right_contianer" fxHide.sm fxHide.xs>
         <img src="https://ssl.gstatic.com/accounts/signup/glif/account.svg" width="250">
         <h3>One account. All of Google<br /> working for you.</h3>
   

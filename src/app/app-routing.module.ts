@@ -10,8 +10,8 @@ import { ResetPasswordComponent } from './Components/reset-password/reset-passwo
 const routes: Routes = [
   {path:'registration',component:RegistrationComponent},
   {path:'login',component:LoginComponent},
-  {path:'forget-password',component:ForgetPasswordComponent},
-  {path:'reset-password',component:ResetPasswordComponent}
+  {path:'forgetPassword',component:ForgetPasswordComponent},
+  {path:'resetPassword/:token',component:ResetPasswordComponent}
 
 ];
 

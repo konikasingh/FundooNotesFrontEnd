@@ -15,6 +15,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ForgetPasswordComponent } from './Components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './Components/reset-password/reset-password.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 
 
@@ -37,7 +39,9 @@ import { ResetPasswordComponent } from './Components/reset-password/reset-passwo
     MatInputModule,
     MatCheckboxModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
+    
     
     
   ],

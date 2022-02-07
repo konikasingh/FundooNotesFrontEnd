@@ -10,7 +10,7 @@ import { UserService } from 'src/app/services/UserService/user.service';
 export class ForgetPasswordComponent implements OnInit {
 
   forgetPasswordForm!:FormGroup;
-  submitted = false;
+  submitted = true;
   constructor(private formBuilder: FormBuilder,  private userService: UserService) { }
 
   ngOnInit(): void {
