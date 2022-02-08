@@ -1,1 +1,18 @@
-
+<mat-card *ngIf="!card" class="matcard">
+    <input placeholder="Take a note..." class="input" (click)="cardSwap()" />
+</mat-card>
+<mat-card class="list-view-mat-card" *ngIf="card">
+    <form [formGroup]="createNotesForm" (ngSubmit)="onSubmit()">
+        <input type="text" placeholder="Title" name="title" formControlName="Title">
+        <p>
+            <textarea name="content" placeholder="Take a note" formControlName="TakeNote"></textarea>
+        </p>
+        <div class="border">
+            <app-icon></app-icon>
+            <button mat-button class="close" (Click)="onSubmit()">
+                Close
+            </button>
+        </div>
+        
+    </form>
+</mat-card>
