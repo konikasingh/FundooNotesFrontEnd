@@ -4,6 +4,7 @@ import { ForgetPasswordComponent } from './Components/forget-password/forget-pas
 import { LoginComponent } from './Components/login/login.component';
 import { RegistrationComponent } from './Components/registration/registration.component';
 import { ResetPasswordComponent } from './Components/reset-password/reset-password.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
 
 
 
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path:'registration',component:RegistrationComponent},
   {path:'login',component:LoginComponent},
   {path:'forgetPassword',component:ForgetPasswordComponent},
-  {path:'resetPassword/:token',component:ResetPasswordComponent}
+  {path:'resetPassword/:token',component:ResetPasswordComponent},
+  {path:'dashboard',component:DashboardComponent}
 
 ];
 

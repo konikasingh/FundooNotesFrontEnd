@@ -16,6 +16,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ForgetPasswordComponent } from './Components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './Components/reset-password/reset-password.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+import { CreateNotesComponent } from './Components/create-notes/create-notes.component';
+
 
 
 
@@ -27,6 +35,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     LoginComponent,
     ForgetPasswordComponent,
     ResetPasswordComponent,
+    DashboardComponent,
+    CreateNotesComponent,
    
     
   ],
@@ -40,7 +50,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCheckboxModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule
     
     
     
