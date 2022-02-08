@@ -12,7 +12,7 @@
           </h1>
           <h2>Create Your Fundoo Account</h2>
           <form [formGroup]="registerForm" (ngSubmit)="register()">
-          <div class="name-container" fxLayout.sm="column">
+          <div class="name-container" fxLayout.xs="column" fxLayoutAlign="space-between">
             
             <mat-form-field appearance="outline" class="name_input">
               <mat-label>First Name</mat-label>
@@ -39,7 +39,7 @@
             <p>You can use letters,numbers & periods</p>
           </span>
   
-          <div class="password-container">
+          <div class="password-container" fxLayout.xs="column" fxLayout="row" fxLayoutAlign="space-between">
   
             <mat-form-field appearance="outline" class="name_input">
               <mat-label>Password</mat-label>
@@ -63,7 +63,7 @@
           </div>
          
   
-          <div class="Left-side">
+          <div class="Left-side" fxLayout="row" fxLayoutAlign="space-between center">
             <span class="email_p2">
               <div routerLink='/login'>
                <p>Sign in instead</p>
@@ -73,7 +73,7 @@
           </div>
         </form>
       </div>
-      <div class="right_contianer" fxHide.sm fxHide.xs>
+      <div class="right_contianer" >
         <img src="https://ssl.gstatic.com/accounts/signup/glif/account.svg" width="250">
         <h3>One account. All of Google<br /> working for you.</h3>
   

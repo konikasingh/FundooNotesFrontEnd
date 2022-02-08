@@ -1,5 +1,5 @@
 <div class = "login-container">
-    <h1>
+    <h1 class="head" fxLayoutAlign="center center">
         <span class="k1">F</span>
         <span class="k2">u</span>
         <span class="k3">n</span>
@@ -8,7 +8,7 @@
         <span class="k6">o</span>
     </h1>
   
-    <h2>Sign in</h2>
+    <h2 class="hea" fxLayoutAlign="center center">Sign in</h2>
     <form [formGroup]="loginForm" (ngSubmit)="login()">
     <div class ="input-container">
       <mat-form-field appearance="outline">
@@ -18,7 +18,7 @@
       </mat-form-field>
 
       <div routerLink='/forgetPassword'>
-      <div class = "forgetEmail">
+      <div class = "forgetEmail" flex-order="-50">
         <button class="button">Forgot Email?</button>
       </div>
       </div>
@@ -39,12 +39,12 @@
     </div>
      
     <div routerLink='/registration'>
-      <div class="createAccount">
+      <div class="createAccount" fxLayout="row" fxLayoutAlign="start center">
         <button class="button">Create Account</button>
       </div>
     </div>
   
-    <div class = "text3">
+    <div class = "text3" fxLayout="row" fxLayoutAlign="space-between center">
       <button mat-raised-button >Next</button>
     </div>
   </form>
