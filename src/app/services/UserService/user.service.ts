@@ -43,15 +43,7 @@ export class UserService {
     }
     return this.httpService.putService('/User/resetPassword',data,true,header)
   }
-  userCreateNotes(data:any,token:any){
-    let header={
-      headers:new HttpHeaders({
-        'Content-Type': 'application/json-patch+json',
-        Authorization :'Bearer '+ token
-      })
-    }
-    return this.httpService.postService('/Notes',data,true,header)
-  }
+  
   
 
 }

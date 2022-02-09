@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { NotesServiceService } from 'src/app/services/notes-service.service';
 
 @Component({
   selector: 'app-display-notes',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-notes.component.scss']
 })
 export class DisplayNotesComponent implements OnInit {
-
-  constructor() { }
+  @Input() notesArraylist:any;
+  token:any;
+  constructor(private userService: NotesServiceService) { }
 
   ngOnInit(): void {
+    this.token=localStorage.getItem('token');
+    this.getAllNotes();
   }
-
+  getAllNotes() {
+    this.userService.userGetAllNotes(this.token).subscribe((response: any) => {
+    console.log(response)
+  })
+}
 }

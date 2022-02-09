@@ -14,9 +14,15 @@
                 <input matInput placeholder="Search">
             </mat-form-field>
         </div>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayout.xs="row" fxFlex.xs="95">
+            <mat-icon class="three-icons1">refresh</mat-icon>
+            <mat-icon class="three-icons2">view_stream</mat-icon>
+            <mat-icon matTooltip="Settings" class="three-icons3">settings</mat-icon>
+           
+        </div>
     </mat-toolbar>
     <mat-sidenav-container style=" height: 88vh;background: #fff;">
-        <!-- <mat-sidenav #sidenav style="width: 240px;background-color: transparent;" mode="side" [opened]="true"> -->
+        
         <mat-sidenav #sidenav mode="side" id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened style="width: 240px;background-color: transparent;" mode="side" [opened]="true">
             <div class="menu-container">
                 <mat-nav-list>
@@ -49,6 +55,11 @@
                 </mat-nav-list>
             </div>
         </mat-sidenav>
+        <mat-sidenav-content [ngStyle]="{'margin-left.px':contentMargin}">
+            <router-outlet>   
+                
+            </router-outlet>
+          </mat-sidenav-content>
     </mat-sidenav-container>
 
 </div>

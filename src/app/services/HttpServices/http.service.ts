@@ -19,6 +19,12 @@ export class HttpService {
   {
     return this.httpClient.put(this.BaseUrl+url,data,token && httpOptions)
   }
+
+  getService(url:any,token:boolean=true,httpOptions:any)
+  {
+    return this.httpClient.get(this.BaseUrl+url,token && httpOptions)
+  }
+
   
 }
 
