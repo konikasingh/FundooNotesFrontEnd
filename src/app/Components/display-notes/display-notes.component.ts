@@ -12,12 +12,13 @@ export class DisplayNotesComponent implements OnInit {
   constructor(private userService: NotesServiceService) { }
 
   ngOnInit(): void {
-    this.token=localStorage.getItem('token');
-    this.getAllNotes();
+    // this.token=localStorage.getItem('token');
+    // this.getAllNotes();
   }
-  getAllNotes() {
-    this.userService.userGetAllNotes(this.token).subscribe((response: any) => {
-    console.log(response)
-  })
+//   getAllNotes() {
+//     this.userService.userGetAllNotes(this.token).subscribe((response: any) => {
+//     console.log(response)
+//   })
+// }
 }
-}
+

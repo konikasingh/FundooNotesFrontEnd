@@ -18,6 +18,9 @@
             <mat-icon class="three-icons1">refresh</mat-icon>
             <mat-icon class="three-icons2">view_stream</mat-icon>
             <mat-icon matTooltip="Settings" class="three-icons3">settings</mat-icon>
+            <button mat-icon-button class="three-icons4">
+                <mat-icon>account_circle</mat-icon>
+            </button>
            
         </div>
     </mat-toolbar>
@@ -57,7 +60,7 @@
         </mat-sidenav>
         <mat-sidenav-content [ngStyle]="{'margin-left.px':contentMargin}">
             <router-outlet>   
-                
+
             </router-outlet>
           </mat-sidenav-content>
     </mat-sidenav-container>

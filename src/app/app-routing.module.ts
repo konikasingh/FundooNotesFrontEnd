@@ -16,8 +16,9 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'forgetPassword',component:ForgetPasswordComponent},
   {path:'resetPassword/:token',component:ResetPasswordComponent},
-  {path:'dashboard/notes',component:DashboardComponent, 
-  children:[
+
+  {path:'dashboard',component:DashboardComponent,
+  children:[ 
     {path:'notes',component:GetAllNotesComponent}
   ]
    
