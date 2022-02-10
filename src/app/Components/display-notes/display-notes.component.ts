@@ -7,11 +7,13 @@ import { NotesServiceService } from 'src/app/services/notes-service.service';
   styleUrls: ['./display-notes.component.scss']
 })
 export class DisplayNotesComponent implements OnInit {
+
   @Input() notesArraylist:any;
   token:any;
   constructor(private userService: NotesServiceService) { }
 
   ngOnInit(): void {
+    console.log("notesArraylist",this.notesArraylist)
     // this.token=localStorage.getItem('token');
     // this.getAllNotes();
   }

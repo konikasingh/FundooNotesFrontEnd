@@ -27,6 +27,7 @@ import { IconComponent } from './Components/icon/icon.component';
 import {MatCardModule} from '@angular/material/card';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
 import { DisplayNotesComponent } from './Components/display-notes/display-notes.component';
+import { UpdateNotesComponent } from './Components/update-notes/update-notes.component';
 
 
 
@@ -44,6 +45,7 @@ import { DisplayNotesComponent } from './Components/display-notes/display-notes.
     IconComponent,
     GetAllNotesComponent,
     DisplayNotesComponent,
+    UpdateNotesComponent,
    
     
   ],

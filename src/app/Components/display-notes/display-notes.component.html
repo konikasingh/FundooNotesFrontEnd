@@ -1,19 +1,12 @@
 
-<div class="displayNotes" fxLayout="row wrap" fxLayoutAlign="flex-start">
-    <div class="getAllNotes" *ngFor="let notes of notesArraylist" fxFlex.sm="100%">
-        <mat-card>
-            <mat-card-title-group>
-                <h2 class="heading">{{notes.title}}</h2>
-                <div class="pushPin">
-                    <mat-icon matTooltip="Pin note">push_pin</mat-icon>
-                </div>
-                <p class="paragraph">{{notes.message}}</p>
-                <div class="icons">
-                    <mat-card-actions>
-                        <app-icon></app-icon>
-                    </mat-card-actions>
-                </div>
-            </mat-card-title-group>
-        </mat-card>
+<div class="displayNotes">
+    
+    <div *ngFor="let notes of notesArraylist;" class="getAllNotes">
+        <button class="pinbutton" >
+            <img class="pin" src="../../../assets/push_pin_black_24dp.svg" alt="">
+          </button>
+          <h2 class="heading">{{notes.title}}</h2>
+          <p>{{notes.message}}</p>
+          <app-icon></app-icon>
     </div>
 </div>
