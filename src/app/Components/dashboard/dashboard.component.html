@@ -1,8 +1,10 @@
 <div class="dashboard-container">
     <mat-toolbar>
+       
         <button mat-icon-button>
-            <mat-icon (click)="sidenav.toggle();" style="color: grey;flex-direction: column;">menu</mat-icon>
+            <mat-icon (click)="sidenav.toggle();" style="color: grey;flex-direction: column; ">menu</mat-icon>
         </button>
+
 
         <div class="header-container">
             <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" width="45">
@@ -53,6 +55,12 @@
                         <button mat-button id="sidenav-button">
                             <mat-icon id="sidenav-icon">delete</mat-icon>
                             Trash
+                        </button>
+                    </div>
+                    <div >
+                        <button mat-button id="sidenav-button">
+                            <mat-icon id="sidenav-icon">edit</mat-icon>
+                            Edit Lable
                         </button>
                     </div>
                 </mat-nav-list>

@@ -8,6 +8,10 @@
     border-right-width: 50em;
 }
 
+.butt{
+  border-color: white;
+}
+
 .fundoo{
     font-size: x-large;
     color: rgb(92, 84, 84);
@@ -22,6 +26,7 @@ mat-sidenav{
     border-top: 80px;
     margin-top: 15px;
     margin-left: 15px;
+    background: none;
   }
   mat-sidenav-content {
     position: relative;

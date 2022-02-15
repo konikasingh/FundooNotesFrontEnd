@@ -38,8 +38,8 @@ export class NotesServiceService {
         Authorization:'Bearer '+ token
       })
     }
-    return this.httpService.putService('/Note/'+data.id ,data,true,header);
-    //`/Note/${id}`
+    return this.httpService.putService('/Notes/' +data.id,data,true,header);
+    
   }
 }
 

@@ -7,6 +7,7 @@ import { ResetPasswordComponent } from './Components/reset-password/reset-passwo
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { CreateNotesComponent } from './Components/create-notes/create-notes.component';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 
 
@@ -20,7 +21,7 @@ const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,
   children:[ 
     {path:'notes',component:GetAllNotesComponent}
-  ]
+  ],canActivate:[AuthenticationGuard]
    
   
   

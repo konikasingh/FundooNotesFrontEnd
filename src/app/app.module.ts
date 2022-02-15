@@ -28,6 +28,8 @@ import {MatCardModule} from '@angular/material/card';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
 import { DisplayNotesComponent } from './Components/display-notes/display-notes.component';
 import { UpdateNotesComponent } from './Components/update-notes/update-notes.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 
 
@@ -65,7 +67,10 @@ import { UpdateNotesComponent } from './Components/update-notes/update-notes.com
     MatIconModule,
     MatListModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
+    
+   
     
     
     

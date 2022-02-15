@@ -13,17 +13,17 @@ export class UpdateNotesComponent implements OnInit {
   token:any;
 
   constructor(private userService: NotesServiceService,public dialogRef: MatDialogRef<UpdateNotesComponent>, 
-    @Inject(MAT_DIALOG_DATA) public userlist: any) { }
+    @Inject(MAT_DIALOG_DATA) public note: any) { }
 
   ngOnInit(): void {
-    console.log('data from dialog',this.userlist)
+    console.log('data from dialog',this.note)
     this.token=localStorage.getItem('token');
-    this.title=this.userlist.title
-    this.message=this.userlist.message
+    this.title=this.note.title
+    this.message=this.note.message
   }
   Update() {
     let data = {
-      id: this.userlist.noteId,
+      id: this.note.notesId,
       title: this.title,
       message: this.message,
   
@@ -33,7 +33,7 @@ export class UpdateNotesComponent implements OnInit {
       console.log(response)
       
     })
-    window.location.reload();
+    
     this.dialogRef.close();
   }
 
