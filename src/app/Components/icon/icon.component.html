@@ -1,20 +1,53 @@
 <div class="border">
-    <button mat-icon-button>
-        <mat-icon>notifications_paused</mat-icon>
-    </button>
-    <button mat-icon-button>
-        <mat-icon>person_add</mat-icon>
-    </button>
-    <button mat-icon-button>
-        <mat-icon>color_lens</mat-icon>
-    </button>
-    <button mat-icon-button>
-        <mat-icon>image</mat-icon>
-    </button>
-    <button mat-icon-button>
-        <mat-icon>archive</mat-icon>
-    </button>
-    <button mat-icon-button>
-        <mat-icon>more_vert</mat-icon>
-    </button>
+
+    <div class="cl">
+        <button mat-icon-button>
+            <mat-icon>notifications_paused</mat-icon>
+        </button>
+    </div>
+    <div class="cl">
+        <button mat-icon-button>
+            <mat-icon>person_add</mat-icon>
+        </button>
+    </div>
+    <div class="cl">
+        <button mat-icon-button [matMenuTriggerFor]="changeColor">
+            <mat-icon>color_lens</mat-icon>
+        </button>
+        <mat-menu #changeColor="matMenu" class="color-box">
+            <div class="card">
+                <div *ngFor="let noteColor of Colors">
+                    <button class="coll" mat-mini-fab [style.background]="noteColor?.colorcode"
+                        (click)="setColor(noteColor?.colorcode)">
+                    </button>
+                </div>
+            </div>
+        </mat-menu>
+    </div>
+    <div class="cl">
+        <button mat-icon-button>
+            <mat-icon>image</mat-icon>
+        </button>
+    </div>
+    <div class="cl">
+        <button mat-icon-button (click)="archiveNote()">
+            <mat-icon>archive</mat-icon>
+        </button>
+    </div>
+    <!-- <div class="cl">
+        <button mat-icon-button >
+            <mat-icon>more_vert</mat-icon>
+        </button>      
+    </div> -->
+    <div class="cl">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item class="matMenu" (click)="Trash()">
+                <span>Delete note</span>
+            </button>
+        </mat-menu>
+    </div>
 </div>

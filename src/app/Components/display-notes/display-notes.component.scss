@@ -3,7 +3,7 @@
     margin-left: 20%;
     padding-top: 2%;
     padding-left: 5%;
-    width: 1650px;
+    width: 1290px;
     height: auto;
     border: none;
   }
@@ -19,14 +19,15 @@
   
   .pinbutton{
     border: none;  
-    background-color: white;
+    //background-color: white;
     cursor: pointer;
+    background-color: transparent
     
   
   }
   
   .pin{
-    margin-left: 305px;
+    margin-left: 225px;
     margin-top: -3%;
     opacity: 0.54;
     width: 25px;

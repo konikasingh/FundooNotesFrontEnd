@@ -41,5 +41,41 @@ export class NotesServiceService {
     return this.httpService.putService('/Notes/' +data.id,data,true,header);
     
   }
+  colorNotes(data:any,token:any)
+  {
+    console.log("colorNotes" ,data)
+    let header={
+      headers:new HttpHeaders({
+        'Content-Type': 'application/json-patch+json',
+         Authorization:'Bearer '+ token
+        
+      })
+    }
+    return this.httpService.putService('/Notes/' +data.id+'/color' ,data,true,header);
+    
+  }
+  
+  archiveNotes(data:any,token:any)
+  {
+    let header={
+      headers:new HttpHeaders({
+        'Content-Type': 'application/json-patch+json',
+        Authorization:'Bearer '+ token
+        
+      })
+    }
+    return this.httpService.putService('/Notes/' +data.id+'/ArchiveNote' ,data,true,header);
+  }
+
+  trashNotes(data:any,token:any){
+    let header={
+      headers:new HttpHeaders({
+        'Content-Type': 'application/json-patch+json',
+        Authorization:'Bearer '+ token
+        
+      })
+    }
+    return this.httpService.putService('/Notes/' +data.id+'/TrashOrRestoreNote' ,data,true,header);
+  }
 }
 

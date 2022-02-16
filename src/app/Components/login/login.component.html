@@ -1,51 +1,51 @@
-<div class = "login-container">
-    <h1 class="head" fxLayoutAlign="center center">
-        <span class="k1">F</span>
-        <span class="k2">u</span>
-        <span class="k3">n</span>
-        <span class="k4">d</span>
-        <span class="k5">o</span>
-        <span class="k6">o</span>
-    </h1>
-  
-    <h2 class="hea" fxLayoutAlign="center center">Sign in</h2>
-    <form [formGroup]="loginForm" (ngSubmit)="login()">
-    <div class ="input-container">
+<div class="login-container">
+  <h1 class="head" fxLayoutAlign="center center">
+    <span class="k1">F</span>
+    <span class="k2">u</span>
+    <span class="k3">n</span>
+    <span class="k4">d</span>
+    <span class="k5">o</span>
+    <span class="k6">o</span>
+  </h1>
+
+  <h2 class="hea" fxLayoutAlign="center center">Sign in</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="input-container">
       <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput placeholder="email" formControlName="email">
-            <mat-error>Enter email</mat-error>
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="email" formControlName="email">
+        <mat-error>Enter email</mat-error>
       </mat-form-field>
 
       <div routerLink='/forgetPassword'>
-      <div class = "forgetEmail" flex-order="-50">
-        <button class="button">Forgot Email?</button>
+        <div class="forgetEmail" flex-order="-50">
+          <button class="button">Forgot Email?</button>
+        </div>
       </div>
-      </div>
-  
+
       <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
         <input matInput placeholder="password" formControlName="password">
         <mat-error>Enter password</mat-error>
-       </mat-form-field>
+      </mat-form-field>
     </div>
 
-    <div class = "text">
+    <div class="text">
       <p>Not your computer? Use Guest mode to sign in privately.</p>
     </div>
 
     <div class="text2">
       <button class="button">Learn More</button>
     </div>
-     
+
     <div routerLink='/registration'>
       <div class="createAccount" fxLayout="row" fxLayoutAlign="start center">
         <button class="button">Create Account</button>
       </div>
     </div>
-  
-    <div class = "text3" fxLayout="row" fxLayoutAlign="space-between center">
-      <button mat-raised-button >Next</button>
+
+    <div class="text3" fxLayout="row" fxLayoutAlign="space-between center">
+      <button mat-raised-button>Next</button>
     </div>
   </form>
-  </div>
+</div>

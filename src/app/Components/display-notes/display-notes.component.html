@@ -1,17 +1,17 @@
 <div class="section" fxLayout="row wrap" fxLayoutGap="25px grid" fxLayoutAlign="start center">
-    <div fxFlex=25% fxFlex.xs=100% *ngFor="let notes of notesArraylist;">
-      <mat-card class="example-card" (click)="openDialog(notes)">
+    <div fxFlex=25% fxFlex.xs=100% *ngFor="let notes of notesArraylist;" >
+      <mat-card class="example-card" [style.background]="notes.color">
         <button class="pinbutton">
           <img class="pin" src="../../../assets/push_pin_black_24dp.svg" alt="">
         </button>
-        <mat-card-title>
+        <mat-card-title (click)="openDialog(notes)">
           {{notes.title }}
         </mat-card-title>
-        <mat-card-subtitle>
+        <mat-card-subtitle (click)="openDialog(notes)">
           {{ notes.message }}
         </mat-card-subtitle>
         <mat-card-content>
-          <app-icon [CardObject]="notes"></app-icon>
+          <app-icon [CardObject]="notes" (changeColorOfNote)="colorMessageReceived($event)"></app-icon>
         </mat-card-content>
       </mat-card>
     </div>

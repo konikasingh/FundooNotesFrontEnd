@@ -30,6 +30,8 @@ import { DisplayNotesComponent } from './Components/display-notes/display-notes.
 import { UpdateNotesComponent } from './Components/update-notes/update-notes.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { ArchieveNotesComponent } from './Components/archieve-notes/archieve-notes.component';
+import { TrashNotesComponent } from './Components/trash-notes/trash-notes.component';
 
 
 
@@ -48,6 +50,8 @@ import { Router } from '@angular/router';
     GetAllNotesComponent,
     DisplayNotesComponent,
     UpdateNotesComponent,
+    ArchieveNotesComponent,
+    TrashNotesComponent,
    
     
   ],
